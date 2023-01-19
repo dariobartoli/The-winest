@@ -1,0 +1,258 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+.body{
+    background-color: #e4e1db;
+    height: 100vh;
+}
+
+.verResumen{
+    border-top: 1px gray solid;
+    border-bottom: 1px gray solid;
+    background-color: #d4d3cd;
+}
+.resumenContainer{
+    width: 100%;
+    max-width: 540px;
+    height: 65px;
+}
+
+.logoContainer{
+    background-color: #e4e1db;
+}
+.logo{
+    width: 100%;
+    max-width: 562px;
+}
+
+.fieldsetForm{
+    width: 95% !important;
+    max-width: 560px;
+}
+
+.formGroup{
+    position: relative;
+    --color: #5757577e;
+}
+.deleteButton{
+    position: absolute;
+    right: 0;
+    top: 25%;
+    font-size: 1.5rem;
+    padding-right: .5rem;
+    color: black;
+}
+.formInput{
+    height: 46.19px;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid #d4d1cb;
+    color: #706c6c;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+.formInput:focus{
+    border: #636363 1.5px solid;
+}
+
+.formInput, .formInput:not(:placeholder-shown){
+    color: #4d4646;
+}
+
+.formInput:focus + .formLabel, .formInput:not(:placeholder-shown) + .formLabel{
+transform: translateY(-1px) scale(.7);
+transform-origin: left top;
+color: #4d4646;
+}
+
+.formLabel{
+    color: var(--color);
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s, color .3s; 
+}
+
+
+.formButton{
+    width: 95%;
+    max-width: 560px;
+    height: 70px;
+    border: none;
+    border-radius: 5px;
+    background-color: #F2D556;
+    color: rgb(48, 48, 48);
+}
+.formButton:hover{
+    border: 1px black solid;
+    color: black;
+}
+.formContainer{
+    align-items: center;
+    padding: 1rem;
+}
+.logoDesktop{
+    display: none;
+}
+
+.cartLogoContainer{
+    background-color: white;
+    width: 75px;
+    border-radius: 10px;
+}
+.cartLogo{
+    width: 20px;
+}
+.collapseContainer{
+    background-color: #242424;
+}
+.cart{
+    width: 100%;
+    max-width: 540px;
+    color: white;
+}
+.cartTotal{
+    border-top: 1px gray solid;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+.carritoDesktop{
+    display: none;
+}
+.formError{
+    color: red;
+}
+.error1, .error2, .error3, .error4, .error5, .error6, .error7, .error8{
+    border: 1px solid red;
+}
+.error1:focus, .error2:focus, .error3:focus, .error4:focus, .error5:focus, .error6:focus, .error7:focus, .error8:focus{
+    border: 1px solid red;
+}
+.buttonContainer{
+    width: 95%;
+    max-width: 560px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.ancor{
+    color: rgb(49, 49, 49);
+}
+.ancor:hover{
+    color: black;
+}
+
+
+
+/*               MODAL              */
+.modall{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 2;
+    transition: opacity .1s .1s;
+    --transform: translateY(-100vh);
+    --transition: transform .4s;
+  }
+  .modalShow{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+    --transform: translateY(0);
+    --transition: transform .4s .4s;
+  }
+  .modalContainer{
+    margin: auto;
+    width: 90%;
+    max-width: 500px;
+    max-height: 90%;
+    background-color: #242424;
+    color: white;
+    border-radius: 0.5rem;
+    border: 1px solid #5e5e5e;
+    padding: 2rem 1.5rem;
+    transform: var(--transform);
+    transition: var(--transition);
+  }
+  .cerrarModal{
+    cursor: pointer;
+  }
+
+
+
+
+@media screen and (min-width:1000px){
+    .carrito{
+        display: none;
+    }
+    .header{
+        display: none;
+    }
+    .carritoDesktop{
+        background-color: #242424;
+        width: 50%;
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 4rem;
+        padding-top: 4rem;
+        height: 100vh;
+
+    }
+    .mainContainer{
+        display: flex;
+        flex-direction: row-reverse;
+        background-color: #242424;
+    }
+    .formulario{
+        width: 50%;
+        background-color: #e4e1db;
+    }
+    .formContainer{
+        align-items: flex-end;
+        padding-right: 4rem !important;
+    }
+    .logoDesktop{
+        display: block;
+        display: flex;
+        justify-content: end;
+        padding-top: 3rem;
+        padding-right: 4rem;
+        padding-bottom: 3rem;
+        background-color: #e4e1db;
+    }
+    .cart{
+        width: 400px;
+    }
+    .formButton{
+        width: 167px;
+    }
+    .buttonContainer{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    
+
+} 
+@media screen and (min-width:1300px){
+
+    .cart{
+        width: 600px;
+    }
+}

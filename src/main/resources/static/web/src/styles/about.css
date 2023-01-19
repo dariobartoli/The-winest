@@ -1,0 +1,481 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+}
+
+.bg-wine{
+    background-color: rgb(36, 36, 36);
+}
+
+.header-logo{
+    height: 3rem;
+    
+}
+
+
+
+.bgYellow{
+    background-color: rgb(149, 45, 63);
+}
+
+
+/* Borders */
+.border-default{
+    border-top: 1px solid #fff;
+    
+}
+.border-down{
+    border-bottom: 1px solid #fff;
+}
+.btn-left{
+    border-right: 1px solid #fff!important;
+}
+.border-right{
+    border-left: 1px solid #fff!important;
+}
+
+/* Bars */
+
+.center-bar{
+    width: 100%;
+}
+/* Button */
+button{
+    padding: .5rem;
+    border: 0;
+    transition:  .5s;
+}
+.button{
+    padding: .5rem;
+    border: 0;
+    border-bottom: 1px solid #fff!important;
+    transition:  .5s;
+}
+
+.btnClick{
+    background-color: rgb(242, 213, 86);
+    width: 14.3%!important;
+    border-bottom: 0!important;
+}
+
+.btnClick2{
+    background-color: rgb(242, 213, 86);
+    height: 14.3%!important;
+    border-right: 0!important;
+    
+}
+
+
+
+.active-button{
+    background-color: rgb(242, 213, 86);
+}
+
+.submit-btn{
+    background-color: #E4E1DB;
+    width: 80vw;
+    font-style: italic;
+}
+
+.submit-btn:hover{
+    background-color: rgb(39, 39, 38);
+    color: #E4E1DB;
+}
+
+.btn{
+	color:rgb(255, 255, 255);
+	background-color:#fff;
+	outline: none;
+    border: 0;
+    color: rgb(255, 255, 255);
+	padding:10px 20px;
+	text-transform:uppercase;
+	margin-top:50px;
+	border-radius:2px;
+	cursor:pointer;
+	position:relative;
+}
+.input-container input:focus ~ label,
+.input-container input:valid ~ label{
+	top:-12px;
+	font-size:12px;
+	
+}
+
+/* Titles */
+.font-italic{
+    font-style: italic;
+    
+}
+.main-title{
+    border-bottom: 1px solid #fff;
+    display: flex;
+    transition: 0.5s;
+    
+}
+.link{
+    color: #fff;
+    text-decoration: none;
+}
+.font-size{
+    font-size: 1.5rem;
+}
+
+
+
+/* Nav */
+.top-nav{
+    /* background-image: url(../assets/user.png);
+    background-position: 50%;
+    background-size: contain;
+    background-repeat: no-repeat; */
+}
+.nav-center{
+    display: flex;
+}
+.swiper-pagination {
+	position:fixed!important;
+	top: 90px!important;
+	left: 0px!important;
+	width: 100vw!important;
+	margin: 0;
+}
+.swiper-pagination-bullet {
+	width: 15.5vw!important;
+    height: 5rem!important;
+    border-radius: 0%!important;
+    opacity: 100!important;
+    padding-top: 1rem!important;
+    background-color: rgb(36, 36, 36)!important;
+    background-image: url(../assets/user.png)!important;
+    background-size: contain!important;
+    background-position: 50%!important;
+    background-repeat: no-repeat!important;
+    border-left: 1px solid #fff!important;
+}
+.swiper-pagination-bullet-active {
+	color:#fff;
+	background: rgb(149, 45, 63)!important;
+    background-image: url(../assets/user.png)!important;
+    background-size: contain!important;
+    background-position: 50%!important;
+    background-repeat: no-repeat!important;
+    border-bottom: 0ch!important;
+} 
+
+
+/* Swiper Squad */
+.time4Wine{
+    background-image: url(../assets/Winest.png)!important;
+    background-size: contain!important;
+}
+.matias{
+    background-image: url(../assets/yo-modified.png)!important;
+    
+}
+.alan{
+    background-image: url(../assets/alan.png)!important;
+}
+.dario{
+    background-image: url(../assets/dario.png)!important;
+}
+.oliver{
+    background-image: url(../assets/oliver.png)!important;
+}
+.maximo{
+    background-image: url(../assets/maxi.png)!important;
+}
+.mario{
+    background-image: url(../assets/mario.png)!important;
+}
+/* Display None */
+.left-bar{
+    display: none;
+}
+.right-bar{
+    display: none;
+}
+.map{
+    display: none;
+}
+::-webkit-scrollbar{
+    visibility: hidden;
+}
+
+
+
+/* Responsive 1024px */
+@media screen and (min-width : 1024px){
+
+    .left-bar{
+        display: flex;
+        /* border-right: 1px solid #fff; */
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        width: 20%!important;
+        height: 80vh;
+    }
+    .center-bar{
+        
+        max-height: 80vh!important;
+        max-width:80%;
+        border-bottom: 1px solid #fff;
+        border-left: 1px solid #fff;
+    }
+    .border-default{
+        
+        border-top: 0;
+    }
+    .height-about{
+        height: 61vh!important;
+    }
+    /* Nav */
+    .nav-left{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        height: 100%!important;
+    }
+    /* Header */
+    .left-header{
+        width: 20%;
+        border-right: 1px solid #fff;
+        height: 100%;
+    }
+    .center-header{
+        width: 80%;
+        height: 100%;
+        
+    }
+    /* Section */
+    .text-section{
+        border-top: 1px solid #fff;
+    }
+    /* Button */
+    .submit-btn{
+        
+        width: 70vw;
+        
+    }
+    .button{
+        
+        height: 14.2%;
+        
+    }
+
+    /* Swiper  */
+    .swiper-wrapper{
+        height: 100%;
+        width: 100%;
+    }
+    
+    /* Pagination */
+    .swiper-pagination{
+        width: 819px!important;
+        left: 205px!important;
+
+        
+    }
+    .swiper-pagination-bullet{
+        height: 84px!important;
+       border-top: 1px solid #fff!important;
+    }
+    .time4Wine{
+        
+        background-size: 100px!important;
+    }
+    /* Display None */
+    /* .nav-center{
+        display: none!important;
+    } */
+    
+}
+
+/* Responsive 1440 */
+@media screen and (min-width : 1440px){
+
+    .right-bar{
+        display: flex;
+        border-left: 1px solid #fff;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        width: 35%!important;
+        height: 80vh;
+
+    }
+    .center-bar{
+        max-width: 55%!important;
+        
+    }
+    .left-bar{
+        width: 10%!important;
+    }
+    .aligner-1440{
+        justify-content: center!important;
+    }
+    .height-about{
+        height: 60.8vh!important;
+    }
+    .font-size{
+        font-size: 2.3rem!important;
+    }
+    /* Forms */
+    .input-container{
+        width: 100%!important;
+    }
+    .all-forms{
+        
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        align-items: center;
+        
+    }
+    /* Header */
+    .right-header{
+        width: 35%;
+        border-left: 1px solid #fff;
+    }
+    .center-header{
+        width: 55%;
+    }
+    .left-header{
+        width: 10%;
+    }
+    /* Button */
+    .submit-btn{
+        width: 33rem;
+        display: flex;
+        justify-content: center;
+    }
+    /* Maps */
+    .map {
+        display: flex;
+        -webkit-filter: grayscale(100%);
+    }
+    /* Titles */
+    .titleLeft{
+        justify-content: start!important;
+        
+    }
+    .titleCenter{
+        justify-content: center!important;
+    }
+    .titleRight{
+        justify-content: end!important;
+    }
+    /* Squares */
+    .square{
+        width: 50%;
+        height: 33.3%;
+        background-color: rgb(149, 45, 63);
+        transition: 1s;
+        transform: translate(0px, 0, 0px);
+        
+    }
+    .rectangle{
+        width: 50%;
+        height: 66.6!important;
+        
+    }
+    .square-1{
+        
+        border-right: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        background-image: url(https://cdn.sanity.io/images/tduq6a61/production/4e7589af407d49cedfb8560f30931b9d831592de-960x765.jpg?w=800&q=80&fit=max&auto=format);
+        background-size: cover;
+    }
+    .square-2{
+       
+        border-bottom: 1px solid #fff;
+        background-image: url(https://cdn.sanity.io/images/tduq6a61/production/71975112ca8ee2ccaeeabf5ef3eb109725d552a8-4480x6720.jpg?w=800&q=80&fit=max&auto=format);
+        background-position: 50% 50%;
+        background-size: cover;
+    }
+    .square-3{
+        background-image: url(https://cdn.sanity.io/images/tduq6a61/production/c12e0afcb7bf2a41fb67d9581fcfb9f4ca82533d-960x641.jpg?w=800&q=80&fit=max&auto=format);
+        background-size: cover;
+        background-position: 0%;
+        border-right: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+    }
+    .square-4{
+        height: 66.6%;
+        background-image: url(https://i.ibb.co/tztsVkM/ducco-brut.png);
+        background-position: 0% 50%;
+        background-size: cover;
+    }
+    .square-5{
+        background-image: url(../assets/winePour.jpg);
+        background-size: cover;
+        background-position: 0% 50%;
+        border-right: 1px solid #fff;
+    }
+
+    
+    /* Pagination */
+    .swiper-pagination{
+        width: 792px!important;
+        left:144px!important;
+
+        
+    }
+    .swiper-pagination-bullet{
+        height: 84px!important;
+       border-top: 1px solid #fff!important;
+    }
+    /* Display None */
+
+    
+    
+    
+
+   
+    
+    
+    
+}
+@media screen and (min-width : 1920px){
+
+    .bgYellow{
+        height: 10.7vh;
+    }
+    .swiper-pagination{
+        width: 1055px!important;
+        left:192px!important;
+
+        
+    }
+    .swiper-pagination-bullet{
+        height: 84px!important;
+       border-top: 1px solid #fff!important;
+    }
+    .font-size{
+        font-size: 2.9rem!important;
+    }
+
+}
+
+@media screen and (min-width : 2560px){
+    
+    .bgYellow{
+        height: 8.4vh;
+    }
+    .swiper-pagination{
+        width: 1407px!important;
+        left:256px!important;
+
+        
+    }
+    .swiper-pagination-bullet{
+        height: 84px!important;
+       border-top: 1px solid #fff!important;
+    }
+    .font-size{
+        font-size: 2.9rem!important;
+    }
+}
+

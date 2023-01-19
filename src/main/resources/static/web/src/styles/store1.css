@@ -1,0 +1,101 @@
+.add-cart {
+    width: 250px;
+    height: 250px;
+
+
+}
+
+#defaultModal{
+    background-color: rgba(0, 0, 0, 0.349);
+}
+.cart{
+    animation: myAnim 1s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: rotateY(-100deg);
+		transform-origin: right;
+	}
+
+	100% {
+		opacity: 1;
+		transform: rotateY(0);
+		transform-origin: right;
+	}
+}
+
+.bottle{
+    filter: drop-shadow(12px 7px 20px rgba(112, 107, 107, 0.445));
+}
+
+.add-cart img {
+
+    animation: rotate 4s infinite linear;
+}
+
+.bg-wine {
+    background-color: #952d3e52;
+}
+
+.see-more {
+    width: 120px;
+    height: 40px;
+    background-color: #B70101;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(-360deg);
+    }
+
+}
+
+@media (min-width: 375px) {
+
+    .filters {
+        height: 187.5px;
+    }
+
+
+}
+
+
+@media (min-width: 425px) {
+
+
+    .filters {
+        height: 212.5px;
+    }
+
+}
+
+
+@media (min-width: 768px) {
+
+
+    .filters {
+        height: 187.5px;
+    }
+
+
+}
+
+
+@media (min-width: 1024px) {
+
+
+    .filters {
+        height: 160px;
+    }
+
+
+}
+
+@media (min-width: 1440px) {}
+
+@media (min-width: 1920px) {}
+
+
+@media (min-width: 2560px) {}

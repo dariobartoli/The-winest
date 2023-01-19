@@ -1,0 +1,397 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+}
+
+.bg-wine{
+    background-color: rgb(36, 36, 36);
+}
+
+.header-logo{
+    height: 3rem;
+    
+}
+
+.border-default{
+    border-top: 1px solid #fff;
+    
+}
+
+.bgYellow{
+    background-color: rgb(149, 45, 63);
+}
+.border-topDown{
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Bars */
+.center-bar{
+    width: 100%;
+}
+/* Button */
+button{
+    padding: .5rem;
+    border: 0;
+    transition:  .5s;
+}
+.button{
+    padding: .5rem;
+    border: 0;
+    border-bottom: 1px solid #fff!important;
+    transition:  .5s;
+}
+
+.btnClick{
+    background-color: rgb(149, 45, 63);
+    width: 80%!important;
+    border-bottom: 0!important;
+}
+
+.btn-left{
+    border-right: 1px solid #fff!important;
+}
+
+.active-button{
+    background-color: rgb(149, 45, 63);
+}
+
+.submit-btn{
+    background-color: #E4E1DB;
+    width: 80vw;
+    color: rgb(36, 36, 36);
+    
+}
+
+.submit-btn:hover{
+    background-color: rgb(36, 36, 36);
+    color: #E4E1DB;
+    font-style: italic;
+}
+
+/* Bottle */
+.bottle{
+    background-image: url(https://i.ibb.co/T4zrWf6/goda.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+/* Forms */
+.input-container{
+	position:relative;
+	margin-bottom:25px;
+}
+.input-container label{
+	position:absolute;
+	top:0px;
+	left:0px;
+	font-size:16px;
+    font-style: italic;
+	color:rgb(255, 255, 255);	
+    pointer-event:none;
+	transition: all 0.2s ease-in-out;
+}
+.input-container input{ 
+  border:0;
+  border-bottom:1px solid rgb(255, 255, 255);  
+  background:transparent;
+  width:100%;
+  padding:8px 0 5px 0;
+  font-size:16px;
+  font-style: italic;
+  color:rgb(255, 255, 255);
+}
+.input-container input:focus{ 
+ border:none;	
+ outline:none;
+ border-bottom:1px solid #fff;	
+}
+.btn{
+	color:rgb(36, 36, 36);
+	background-color:#fff;
+	outline: none;
+    border: 0;
+    color: rgb(36, 36, 36);
+	padding:10px 20px;
+	text-transform:uppercase;
+	margin-top:50px;
+	border-radius:2px;
+	cursor:pointer;
+	position:relative;
+}
+.input-container input:focus ~ label,
+.input-container input:valid ~ label{
+	top:-12px;
+	font-size:12px;
+	
+}
+/* Imagen */
+.change-picture:hover{
+    text-decoration: underline;
+}
+.logo-img{
+    width: 8rem;
+    height: 8rem;
+}
+.avatar-upload {
+    position: relative;
+    max-width: 205px;
+    margin: 1rem auto;
+}
+.avatar-upload .avatar-edit {
+    position: absolute;
+    right: 12px;
+    z-index: 1;
+    top: 10px;
+}
+.avatar-upload .avatar-edit input {
+    display: none;
+}
+.avatar-upload .avatar-edit input + label {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    margin-bottom: 0;
+    border-radius: 100%;
+    background: #FFFFFF;
+    border: 1px solid transparent;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.12);
+    cursor: pointer;
+    font-weight: normal;
+    transition: all .2s ease-in-out;
+}
+.avatar-upload .avatar-edit input + label:hover {
+    background: #f1f1f1;
+    border-color: #d6d6d6;
+}
+.avatar-upload .avatar-edit input + label:after {
+    
+    
+    font-family: 'FontAwesome';
+    color: #757575;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: auto;
+}
+.avatar-upload .avatar-preview {
+    width: 192px;
+    height: 192px;
+    position: relative;
+    border-radius: 100%;
+    border: 6px solid #F8F8F8;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.1);
+}
+.avatar-upload .avatar-preview > div {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/* Text */
+.font-italic{
+    font-style: italic;
+}
+.main-title{
+    border-bottom: 1px solid #fff;
+    display: flex;
+    transition: 0.5s;
+}
+.welcome-message{
+    width: 100%;
+}
+
+/* Display None */
+.left-bar{
+    display: none;
+}
+.right-bar{
+    display: none;
+}
+
+/* Responsive 375px */
+@media screen and (min-width : 375px){
+    
+}
+/* Responsive 1024px */
+@media screen and (min-width : 1024px){
+
+    .left-bar{
+        display: flex;
+        border-right: 1px solid #fff;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        width: 20%!important;
+        background-image: url(../assets/winecellar.jpg);
+        background-size: cover;
+        height: 80vh;
+    }
+    .center-bar{
+        max-height: 80vh!important;
+        max-width:80%;
+        border-bottom: 1px solid #fff;
+    }
+    .welcome-message{
+        width: 100%;
+    }
+    /* Header */
+    .left-header{
+        width: 20%;
+        border-right: 1px solid #fff;
+        height: 100%;
+    }
+    .center-header{
+        width: 80%;
+        height: 100%;
+    }
+    /* Button */
+    .submit-btn{
+        
+        width: 70vw;
+        
+    }
+
+}
+
+/* Responsive 1440 */
+@media screen and (min-width : 1440px){
+
+    .right-bar{
+        background-image: url(../assets/fields.jpg);
+        background-size: cover;
+        display: flex;
+        border-left: 1px solid #fff;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        width: 35%!important;
+        height: 80vh!important;
+
+    }
+    .center-bar{
+        max-width: 45%!important;
+        
+    }
+    .left-bar{
+        width: 20%!important;
+    }
+    .aligner-1440{
+        justify-content: center!important;
+    }
+    /* Forms */
+    .input-container{
+        width: 100%!important;
+    }
+    .all-forms{
+        
+        
+    }
+    /* Header */
+    .right-header{
+        width: 35%;
+        border-left: 1px solid #fff;
+    }
+    .center-header{
+        width: 45%;
+    }
+    .left-header{
+        width: 20%;
+    }
+    /* Button */
+    .submit-btn{
+        width: 33rem;
+        display: flex;
+        justify-content: center;
+    }
+    /* Squares */
+    .square{
+        width: 50%;
+        height: 33.3%;
+        background-color: rgb(149, 45, 63);
+        transition: 1s;
+        transform: translate(0px, 0, 0px);
+        
+    }
+    .rectangle{
+        width: 50%;
+        height: 66.6!important;
+        
+    }
+    .square-1{
+        
+        border-right: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        background-image: url(https://images.squarespace-cdn.com/content/v1/5333c4eae4b0ecb20d5b5ce0/1551219286542-8A40BQ28N46SAAFFVFI9/Bennett+Lane-42+copy.jpg?format=1500w);
+        background-size: cover;
+    }
+    .square-2{
+       
+        border-bottom: 1px solid #fff;
+        background-image: url(https://cdn.sanity.io/images/tduq6a61/production/fa13285a37c6d16ce8ba569d9789f033d6fd6b2a-1980x1320.jpg?w=800&q=80&fit=max&auto=format);
+        background-position: 50% 50%;
+        background-size: cover;
+    }
+    .square-3{
+        background-image: url(https://cdn.sanity.io/images/tduq6a61/production/70fe0090b7e20a5965177d73fa13d7025877113a-912x904.png?w=1000&fit=max&auto=format);
+        background-size: cover;
+        background-position: 0%;
+        border-right: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+    }
+    .square-4{
+        height: 66.6%;
+        background-image: url(https://i.ibb.co/MMVr5rx/gaudila-2013.png);
+        background-position: 0% 85%;
+        background-size: cover;
+    }
+    .square-5{
+        background-image: url(https://cdn.sanity.io/images/tduq6a61/production/6827d7123fa0a3fa67395ec3ba5cc0be7900992c-1281x1920.jpg?rect=28,197,1253,1422&w=1000&fit=max&auto=format);
+        background-size: cover;
+        background-position: 0%;
+        border-right: 1px solid #fff;
+    }
+
+<<<<<<< HEAD:src/main/resources/static/web/styles/account.css
+    /* Hover */
+    .square:hover{
+        transform:  translate3d(0px, 0, 0px) ;
+        transform: rotateY(32deg);
+    }
+=======
+    
+>>>>>>> main:src/main/resources/static/web/src/styles/account.css
+    
+    
+    
+}
+@media screen and (min-width : 1920px){
+
+    .size{
+        height: 75.5vh!important;
+    }
+    .square{
+        height: 33.4%;
+    }
+
+}
+
+@media screen and (min-width : 2560px){
+    .size{
+        height: 74.4vh!important;
+    }
+
+}
+
